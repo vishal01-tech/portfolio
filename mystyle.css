@@ -1,0 +1,449 @@
+
+:root{
+    --primary-color: aliceblue;
+    --secondary-color: cyan;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Mars Bold";
+    src: url("Mars\ Bold.otf");
+}
+@font-face {
+    font-family: "Reospec";
+    src: url("Reospec.otf");
+}
+*{
+    margin: o;
+    font-family: "Reospec",tahoma;
+}
+.hide{
+    transform: translateY(-65px);
+    transition: all 0.2s ease-in-out;
+}
+.show{
+    transform: translateY(0px);
+    transition: all 0.2s ease-in-out;
+}
+body{
+    background: url(images.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    h1{
+        font-family: "Mars Bold",sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: -10px;
+        color: aliceblue;
+        font-weight: 100;
+    }
+}
+.main-head{
+    color: cyan;
+    font-family: "Mars Bold",sans-serif;
+    letter-spacing: -15px;
+}
+nav ul{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    gap: 20px;
+    li{
+        list-style-type: none;
+    }
+
+}
+nav a{
+    text-decoration: none;
+    color: cyan;
+    font-size: 1.7rem;
+
+
+    
+}
+nav a:hover{
+    color: var(--primary-color);
+    transition: all 0.1s ease-in-out;
+
+}
+
+
+.main-wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-wrapper .container{
+    height: 80vh;
+    width: 90%;
+    border: 2px cyan solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    gap: 120px;
+
+
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.home .left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .banner{
+        height: 350px;
+        width: 320px;
+        background-color: cyan;
+        box-shadow: 0px 0px 20px 5px cyan;
+        border-radius: 40% 50% 30% 50%/40% 50% 50% 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img{
+            height: 120%;
+            z-index: 10;
+        }
+    }
+    .banner-ring{
+        height: 330px;
+        width: 300px;
+        border-radius: 2px;
+        border: 4px aliceblue solid;
+        border-radius: 40% 50% 30% 50%/40% 50% 50% 30%;
+        transform: rotate(7deg);
+        position: absolute;
+    }
+}
+    
+.home .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+        position: relative;
+        left: 20px;
+    }
+}
+
+.home .home-wrap{
+    width: 100%;
+    display: flex;
+}
+.home .footer{
+    height: 50px;
+    width: 60%;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    hr{
+        width: 3%;
+        transform: rotate(90deg);
+        background: var(--primary-color);
+    }
+    p{
+        text-align: right;
+    }
+    span{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+    }
+}
+.about-us .container{
+    height: 80vh;
+    width: 90%;
+    border: 2px cyan solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    margin-top: 80px;
+    gap: 120px;
+    margin-left: 70px;
+}
+.about-left{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    h1{
+      color: cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+    }
+    p{
+      color: aliceblue;
+      margin-left: 20px;
+      font-size: 1.3rem;
+      text-align: justify;
+
+    }
+
+}
+.about-right{
+  height: 80%;
+  width: 35%;
+  border-radius: 50%;
+  border: 2px solid cyan;
+  box-shadow: 0px 0px 20px 5px cyan;
+  margin-left: 60%;
+  margin-top: -39%;
+  img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.button{
+    height: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px solid cyan;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: 0.3s;
+
+}
+.button:hover{
+    background: aliceblue;
+    color: cyan;
+}
+
+.service{
+    height: 80vh;
+    width: 90%;
+    border: 2px cyan solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    margin-top: 80px;
+    gap: 120px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px ;
+    svg{
+        height: 70px;
+        width: 70px;
+        fill: aliceblue;
+    }
+}
+.service .card-1{
+    height: 360px;
+    width: 320px;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    text-align: justify;
+    padding: 15px;
+    p{
+        line-height: 20px;
+        color: cyan;
+    }
+    button{
+    height: 50px;
+    width: 200px;
+    border: 2px solid cyan;
+    color: cyan;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: 0.3s;
+    }
+}
+
+.service .card-1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    transition: all .2s ease-in-out;
+}
+
+.project-container{
+    height: 80vh;
+    width: 90%;
+    border: 2px cyan solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    margin-top: 80px;
+    gap: 120px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px ;
+}
+.project{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.project:hover img {
+    transform: scale(1.1);
+}
+.project .text-up {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.project:hover .text-up {
+    opacity: 1;
+}
+.contact{
+    height: 80vh;
+    width: 90%;
+    border: 2px cyan solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    margin-top: 80px;
+    gap: 120px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px ;
+
+}
+
+.contact-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-right input, .contact-right textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid cyan;
+    font-size: 16px;
+}
+
+.contact-right button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background: aliceblue;
+    color: cyan;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact-right button:hover {
+    background: cyan;
+    color: white;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 30%;
+}
+ 
